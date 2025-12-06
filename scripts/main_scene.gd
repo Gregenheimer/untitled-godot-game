@@ -6,9 +6,9 @@ extends Node2D
 
 
 
-func music_config():
-	aww.stream_paused = true
-	noo.playing = true
-	
-func _ready() -> void:
-	ChudPlayer.fall.emit(music_config())
+func _process(_delta: float) -> void:
+	if !ChudPlayer.falling:
+		noo.stream_paused = true
+	else:
+		aww.stream_paused = true
+		noo.stream_paused = false

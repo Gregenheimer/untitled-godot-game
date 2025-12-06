@@ -14,9 +14,12 @@ script = ExtResource("1_w2twt")
 [node name="aww" type="AudioStreamPlayer2D" parent="music"]
 stream = ExtResource("2_pw63i")
 autoplay = true
+parameters/looping = true
 
 [node name="noooo" type="AudioStreamPlayer2D" parent="music"]
 stream = ExtResource("3_gubc5")
+autoplay = true
+parameters/looping = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -24,5 +27,5 @@ stream = ExtResource("3_gubc5")
 z_index = 1
 
 [node name="base_background" type="Sprite2D" parent="."]
-scale = Vector2(2.8429239, 2.2)
+scale = Vector2(2.8429239, 2.1888888)
 texture = ExtResource("4_pu3yx")

@@ -6,15 +6,11 @@ const JUMP_VELOCITY := -400.0
 var falling:= false
 
 
-signal fall
-
-func test():
-	falling = true
 
 func _physics_process(delta: float) -> void:
 
 	if Input.is_action_just_pressed("ui_accept"):
-		fall.emit(test())
+		falling = true
 	if not is_on_floor() and falling:
 		velocity += get_gravity() * delta
 
