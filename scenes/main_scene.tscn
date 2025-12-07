@@ -2,30 +2,29 @@
 
 [ext_resource type="Script" uid="uid://5t5y81a021h7" path="res://scripts/main_scene.gd" id="1_w2twt"]
 [ext_resource type="AudioStream" uid="uid://dy1xab1rbu7px" path="res://assets/music/aww_music.mp3" id="2_pw63i"]
-[ext_resource type="PackedScene" uid="uid://cvyffc6wgdtso" path="res://scenes/chud_player.tscn" id="3_7ykc4"]
+[ext_resource type="PackedScene" uid="uid://cvyffc6wgdtso" path="res://scenes/player.tscn" id="3_7ykc4"]
 [ext_resource type="AudioStream" uid="uid://bwvaetxb470jq" path="res://assets/music/SuperMarioLogan Danger Song.mp3" id="3_gubc5"]
 [ext_resource type="Texture2D" uid="uid://0x6vyw3ggt3s" path="res://assets/pictures/clouds.jpg" id="4_pu3yx"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Main_Root" type="Node2D"]
 script = ExtResource("1_w2twt")
 
-[node name="music" type="Node" parent="."]
+[node name="Music" type="Node" parent="."]
 
-[node name="aww" type="AudioStreamPlayer2D" parent="music"]
+[node name="Happy_Music" type="AudioStreamPlayer2D" parent="Music"]
 stream = ExtResource("2_pw63i")
 autoplay = true
 parameters/looping = true
 
-[node name="noooo" type="AudioStreamPlayer2D" parent="music"]
+[node name="Danger_Music" type="AudioStreamPlayer2D" parent="Music"]
 stream = ExtResource("3_gubc5")
 autoplay = true
 parameters/looping = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="jit" parent="." instance=ExtResource("3_7ykc4")]
-z_index = 1
-
-[node name="base_background" type="Sprite2D" parent="."]
+[node name="Placeholder_Background" type="Sprite2D" parent="."]
 scale = Vector2(2.8429239, 2.1888888)
 texture = ExtResource("4_pu3yx")
+
+[node name="Playable_Character" parent="." instance=ExtResource("3_7ykc4")]

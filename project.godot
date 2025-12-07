@@ -16,7 +16,7 @@ config/features=PackedStringArray("4.5", "GL Compatibility")
 
 [autoload]
 
-ChudPlayer="*res://scripts/chud_player.gd"
+Global_Player="*res://scripts/player.gd"
 
 [input]
 
