@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2x3y40ciewfr"
-path="res://.godot/imported/Screenshot_2025-12-04_192729-removebg-preview(1).png-2313e9b3b87d6d2e598d8537a90992f7.ctex"
+uid="uid://b6l1ilnytbhh3"
+path="res://.godot/imported/Enemy_Explode.png-410779c874c27f0dd8ebd0eda304bf9c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pictures/Screenshot_2025-12-04_192729-removebg-preview(1).png"
-dest_files=["res://.godot/imported/Screenshot_2025-12-04_192729-removebg-preview(1).png-2313e9b3b87d6d2e598d8537a90992f7.ctex"]
+source_file="res://assets/pictures/Enemy_Explode.png"
+dest_files=["res://.godot/imported/Enemy_Explode.png-410779c874c27f0dd8ebd0eda304bf9c.ctex"]
 
 [params]
 
