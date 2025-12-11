@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d38q8wppgntnl"
-path="res://.godot/imported/jit_updated1.png-558386cfce3bbbb776d3189e978f3598.ctex"
+uid="uid://raailvuulede"
+path="res://.godot/imported/Man-01-Sprite-Sheet.png-f4d2eb946cb2a579924b1deeab48c320.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pictures/jit_updated1.png"
-dest_files=["res://.godot/imported/jit_updated1.png-558386cfce3bbbb776d3189e978f3598.ctex"]
+source_file="res://assets/pictures/Man-01-Sprite-Sheet.png"
+dest_files=["res://.godot/imported/Man-01-Sprite-Sheet.png-f4d2eb946cb2a579924b1deeab48c320.ctex"]
 
 [params]
 

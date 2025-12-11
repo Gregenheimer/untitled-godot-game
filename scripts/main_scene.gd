@@ -1,16 +1,18 @@
 extends Node2D
 
 
+@onready var enemy := preload("res://scenes/enemy.tscn")
+@onready var enemy_spawn_timer := $Timer
 
-@onready var happy_music := $Music/Happy_Music
-@onready var danger_music := $Music/Danger_Music
+func _on_timer_timeout() -> void:
+	enemy_instance(Vector2(randi_range(-100,100),20))
+
+func enemy_instance(pos):
+	var instance = enemy.instantiate()
+	instance.position = pos
+	self.add_child(instance)	
+
+func _ready() -> void:
+	pass
 
 
-
-func _process(_delta: float) -> void:
-
-	if !Global_Player.falling:
-		danger_music.stream_paused = true
-	else:
-		happy_music.stream_paused = true
-		danger_music.stream_paused = false

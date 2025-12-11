@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://276hygmuh41k"
-path="res://.godot/imported/jit_updated2.png-69a8e1a7d0aeb3650ae8d25983bae234.ctex"
+uid="uid://dpqv2af278g3d"
+path="res://.godot/imported/Ufo-Sprite-Sheet.png-f643bec75b71da2642f6043af8731705.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pictures/jit_updated2.png"
-dest_files=["res://.godot/imported/jit_updated2.png-69a8e1a7d0aeb3650ae8d25983bae234.ctex"]
+source_file="res://assets/pictures/Ufo-Sprite-Sheet.png"
+dest_files=["res://.godot/imported/Ufo-Sprite-Sheet.png-f643bec75b71da2642f6043af8731705.ctex"]
 
 [params]
 
