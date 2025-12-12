@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://bxhcxvt6lvbuw"]
+[gd_scene load_steps=11 format=3 uid="uid://bxhcxvt6lvbuw"]
 
 [ext_resource type="Texture2D" uid="uid://raailvuulede" path="res://assets/pictures/Man-01-Sprite-Sheet.png" id="1_7p1mj"]
+[ext_resource type="Script" uid="uid://c70xhpqv1qa6l" path="res://scenes/enemy.gd" id="1_md0e3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_md0e3"]
 atlas = ExtResource("1_7p1mj")
@@ -66,6 +67,7 @@ animations = [{
 radius = 8.0
 
 [node name="Enemy" type="Node2D"]
+script = ExtResource("1_md0e3")
 
 [node name="Enemy_Animations" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_7p1mj")
@@ -77,3 +79,9 @@ autoplay = "Idle"
 [node name="Enemy_Hitbox" type="CollisionShape2D" parent="Enemy_Hitbox_Area"]
 position = Vector2(0, 1)
 shape = SubResource("CapsuleShape2D_7p1mj")
+
+[node name="RayCast_Right" type="RayCast2D" parent="."]
+target_position = Vector2(8, 0)
+
+[node name="RayCast_Left" type="RayCast2D" parent="."]
+target_position = Vector2(-8, 0)

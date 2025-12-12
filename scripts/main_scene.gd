@@ -1,18 +1,31 @@
 extends Node2D
 
 
+
 @onready var enemy := preload("res://scenes/enemy.tscn")
 @onready var enemy_spawn_timer := $Timer
 
+
+
 func _on_timer_timeout() -> void:
-	enemy_instance(Vector2(randi_range(-100,100),20))
+
+
+	enemy_instance(Vector2(randi_range(-100,100),32))
+
+
 
 func enemy_instance(pos):
+
+
 	var instance = enemy.instantiate()
 	instance.position = pos
-	self.add_child(instance)	
+	self.add_child(instance)
+	self.add_to_group("enemies")
 
-func _ready() -> void:
+
+
+func _process(_delta: float) -> void:
+	
+	
+	
 	pass
-
-
