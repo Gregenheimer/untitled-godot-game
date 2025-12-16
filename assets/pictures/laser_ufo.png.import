@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://raailvuulede"
-path="res://.godot/imported/Man-01-Sprite-Sheet.png-f4d2eb946cb2a579924b1deeab48c320.ctex"
+uid="uid://01i1c4yvyuxy"
+path="res://.godot/imported/laser_ufo.png-5d6aba450d668da04fd291f578006d15.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pictures/Man-01-Sprite-Sheet.png"
-dest_files=["res://.godot/imported/Man-01-Sprite-Sheet.png-f4d2eb946cb2a579924b1deeab48c320.ctex"]
+source_file="res://assets/pictures/laser_ufo.png"
+dest_files=["res://.godot/imported/laser_ufo.png-5d6aba450d668da04fd291f578006d15.ctex"]
 
 [params]
 

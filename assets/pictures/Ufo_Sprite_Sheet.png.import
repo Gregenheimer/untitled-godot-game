@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmrcelxt27det"
-path="res://.godot/imported/Ufo_Sprite.png-846037487b16ce8b7bbed8258a9b844c.ctex"
+path="res://.godot/imported/Ufo_Sprite_Sheet.png-1db3f344c21f87c6812993cc0e553f63.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pictures/Ufo_Sprite.png"
-dest_files=["res://.godot/imported/Ufo_Sprite.png-846037487b16ce8b7bbed8258a9b844c.ctex"]
+source_file="res://assets/pictures/Ufo_Sprite_Sheet.png"
+dest_files=["res://.godot/imported/Ufo_Sprite_Sheet.png-1db3f344c21f87c6812993cc0e553f63.ctex"]
 
 [params]
 

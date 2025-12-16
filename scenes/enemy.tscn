@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://bxhcxvt6lvbuw"]
 
-[ext_resource type="Texture2D" uid="uid://raailvuulede" path="res://assets/pictures/Man-01-Sprite-Sheet.png" id="1_7p1mj"]
-[ext_resource type="Script" uid="uid://c70xhpqv1qa6l" path="res://scenes/enemy.gd" id="1_md0e3"]
+[ext_resource type="Texture2D" uid="uid://raailvuulede" path="res://assets/pictures/Enemy_Sprite_Sheet.png" id="1_7p1mj"]
+[ext_resource type="Script" uid="uid://c7hhx2vx1k82x" path="res://scripts/enemy.gd" id="1_md0e3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_md0e3"]
 atlas = ExtResource("1_7p1mj")
@@ -67,6 +67,7 @@ animations = [{
 radius = 8.0
 
 [node name="Enemy" type="Node2D"]
+scale = Vector2(0.8, 0.8)
 script = ExtResource("1_md0e3")
 
 [node name="Enemy_Animations" type="AnimatedSprite2D" parent="."]

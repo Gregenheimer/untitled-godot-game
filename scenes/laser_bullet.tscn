@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://45tv13j1v2lm"]
+
+[ext_resource type="Texture2D" uid="uid://01i1c4yvyuxy" path="res://assets/pictures/laser_ufo.png" id="1_mrcvo"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c3pix"]
+radius = 6.25
+height = 12.5
+
+[node name="Laser_Bullet" type="Node2D"]
+scale = Vector2(0.7, 0.7)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_mrcvo")
+
+[node name="Hitbox_Area" type="Area2D" parent="."]
+
+[node name="Laser_Hitbox" type="CollisionShape2D" parent="Hitbox_Area"]
+shape = SubResource("CapsuleShape2D_c3pix")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 5.7142854)
