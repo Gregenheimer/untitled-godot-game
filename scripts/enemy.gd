@@ -24,6 +24,8 @@ func _process(delta: float) -> void:
 		enemy_direction = -1
 	if raycast_left.is_colliding():
 		enemy_direction = 1
+	# if raycast_top.is_colliding():
+	# 	get_tree().queue_free()
 	animation()
 
 

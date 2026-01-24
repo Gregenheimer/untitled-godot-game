@@ -1,13 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://45tv13j1v2lm"]
+[gd_scene load_steps=4 format=3 uid="uid://45tv13j1v2lm"]
 
+[ext_resource type="Script" uid="uid://b870xuv66tw20" path="res://scripts/laser_bullet_scene.gd" id="1_cshoe"]
 [ext_resource type="Texture2D" uid="uid://01i1c4yvyuxy" path="res://assets/pictures/laser_ufo.png" id="1_mrcvo"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c3pix"]
-radius = 6.25
+radius = 4.285714
 height = 12.5
 
 [node name="Laser_Bullet" type="Node2D"]
 scale = Vector2(0.7, 0.7)
+script = ExtResource("1_cshoe")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_mrcvo")
@@ -19,3 +21,4 @@ shape = SubResource("CapsuleShape2D_c3pix")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 target_position = Vector2(0, 5.7142854)
+hit_from_inside = true

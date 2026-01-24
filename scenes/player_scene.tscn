@@ -1,0 +1,76 @@
+[gd_scene load_steps=11 format=3 uid="uid://dnq0cf2kiivc5"]
+
+[ext_resource type="Texture2D" uid="uid://dmrcelxt27det" path="res://assets/pictures/Ufo_Sprite_Sheet.png" id="1_crmta"]
+[ext_resource type="Script" uid="uid://du63ca6nvb8ws" path="res://scripts/player_scene.gd" id="1_vefth"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5c48"]
+atlas = ExtResource("1_crmta")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fwu20"]
+atlas = ExtResource("1_crmta")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xcj4c"]
+atlas = ExtResource("1_crmta")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h0f5h"]
+atlas = ExtResource("1_crmta")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qino5"]
+atlas = ExtResource("1_crmta")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1xkep"]
+atlas = ExtResource("1_crmta")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_doaq5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g5c48")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fwu20")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xcj4c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h0f5h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qino5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1xkep")
+}],
+"loop": false,
+"name": &"shoot_laser",
+"speed": 45.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vefth"]
+size = Vector2(32, 18)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+z_index = 1
+script = ExtResource("1_vefth")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_doaq5")
+animation = &"shoot_laser"
+frame = 4
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7)
+shape = SubResource("RectangleShape2D_vefth")
